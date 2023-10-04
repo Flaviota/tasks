@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import com.devmasterteam.tasks.view.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityLoginBinding
 import com.example.myapplication.view.viewmodel.LoginViewModel
@@ -37,6 +36,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         observe()
     }
 
+    //direcionamento de qual Activity a ser chamada
     override fun onClick(v: View) {
         if (v.id == R.id.button_login) {
             handleLogin()
@@ -63,6 +63,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    //Pegando minhas informações de login
     private fun handleLogin() {
         val email = binding.editEmail.text.toString()
         val password = binding.editPassword.text.toString()

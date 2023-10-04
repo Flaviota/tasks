@@ -14,6 +14,7 @@ class RetrofitClient private constructor() {
         private var token: String = ""
         private var personKey: String = ""
 
+        //Retornando a instância do serviço
         private fun getRetrofitInstance(): Retrofit {
             val httpClient = OkHttpClient.Builder()
 

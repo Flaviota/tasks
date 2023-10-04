@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import com.devmasterteam.tasks.view.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityRegisterBinding
 import com.example.myapplication.view.viewmodel.RegisterViewModel
